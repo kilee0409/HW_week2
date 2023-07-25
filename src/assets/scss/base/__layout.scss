@@ -1,0 +1,17 @@
+.text-al-c {
+  text-align: center;
+}
+
+.text-al-end {
+    text-align: end;
+}
+
+.fl-ai-s-end {
+    align-self: flex-end;
+}
+
+@for $i from 1 through 100 {
+    .w-#{$i} {
+      width:$i * 1%;
+    }
+  }

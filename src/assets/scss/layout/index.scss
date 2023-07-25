@@ -1,0 +1,214 @@
+.banner-container {
+    max-width: 1350px;
+    padding: 70px 0;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    .image {
+        width: 100%;
+    }
+
+    .title-container {
+        max-width: 635px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main-title {
+    color: $HightLight;
+    text-align: right;
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 192px;
+    font-family: Bruno Ace SC;
+}
+
+.sub-title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+
+    span {
+        display: block;
+    }
+}
+
+.details {
+    font-size: $fz-l;
+    font-weight: 400;
+    line-height: 36px;
+    color: $Secondary;
+}
+
+.introduction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: url(image/background-img.png), lightgray 50% / cover no-repeat;
+
+    padding: 160px 0;
+
+    .text-container {
+        width: 525px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        gap: 24px;
+    }
+}
+
+
+
+
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+
+    padding: 160px 0;
+    margin: auto;
+    background-color: $Secondary;
+
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 24px;
+
+        width: 635px;
+    }
+
+    .content {
+        width: 275px;
+        padding: 16px;
+
+        border: 1px solid #E3E3E3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-container {
+        max-width: 525px;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+}
+
+.contact-me-container {
+    background: $PrimaryGradient;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 110px;
+
+    padding: 130px 0;
+
+    .title {
+        display: flex;
+        gap: 16px;
+    }
+
+    .media-container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .media-box {
+        width: 180px;
+        height: 180px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        img:hover {
+            border-radius: 40px;
+            box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.my-project-container {
+    background-color: $Secondary;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 160px;
+
+        width: 1300px;
+        .title-content {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .pic-war {
+        display: grid;
+        grid-template-areas:
+            "pic1 pic1 pic2 wordContent wordContent wordContent "
+            "pic1 pic1 pic2 wordContent wordContent wordContent"
+            "pic1 pic1 pic3     pic3      pic4          pic4"
+            "pic1 pic1 pic3     pic3      pic4          pic4";
+        gap: 24px;
+    }
+
+    .pic-item:nth-child(1) {
+        grid-area: pic1;
+    }
+
+    .pic-item:nth-child(2) {
+        grid-area: pic2;
+    }
+
+    .pic-item:nth-child(3) {
+        grid-area: wordContent;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            max-width: 635px;
+            text-align: justify;
+            color: #15161D;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .see-more-btn {
+            color: $Secondary;
+            background-color: $Primary;
+        }
+    }
+
+    .pic-item:nth-child(4) {
+        grid-area: pic3;
+    }
+
+    .pic-item:nth-child(5) {
+        grid-area: pic4;
+    }
+}

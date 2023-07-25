@@ -1,0 +1,13 @@
+@mixin Button {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 4px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.btn-default {
+    @include Button;
+    max-width: 185px;
+}

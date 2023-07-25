@@ -1,0 +1,14 @@
+.footer-block {
+    height: 105px;
+    background-color: $Primary;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: $Secondary;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
