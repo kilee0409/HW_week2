@@ -31,7 +31,7 @@ import FooterBlock from "./components/FooterBlock.vue"
         <img src="/image/sparkle-sm.png" />
       </div>
     </div>
-    <div class="/image-container">
+    <div class="image-container">
       <img src="/image/sparkle.png" />
       <img src="/image/photographer.png" alt="photographer"/>
       <img src="/image/people-2.png" alt="people-2"/>
