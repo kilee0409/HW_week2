@@ -17,8 +17,7 @@ export default defineConfig({
       }
     }
   },
-  publicPath: process.env.NODE_ENV === 'production'
-  ? '/HW_week2/'
-  : './'
+  //打包後的路徑
+  base: '/HW_week2/'
  
 })
